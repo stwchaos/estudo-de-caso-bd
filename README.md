@@ -1,3 +1,3 @@
 # estudo-de-caso-bd
 
-- Estudo de caso feito para a disciplina de Banco de Dados do Instituto Federal de Santa Catarina.
+- Estudo de caso da UC de Banco de Dados I (2022.2) no IFSC Gaspar.
