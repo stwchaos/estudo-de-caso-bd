@@ -57,17 +57,6 @@ CREATE TABLE ingresso (
     FOREIGN KEY (sessao_filme_id_sessao_filme) REFERENCES sessao_filme (id_sessao_filme)
 );
 
-insert into genero (id_genero, nome_genero) values (1, 'Terror');
-insert into genero (id_genero, nome_genero) values (2, 'Horror');
-insert into genero (id_genero, nome_genero) values (3, 'Comédia');
-insert into genero (id_genero, nome_genero) values (4, 'Teen');
-insert into genero (id_genero, nome_genero) values (5, 'Romance');
-insert into genero (id_genero, nome_genero) values (6, 'comédia romantica');
-insert into genero (id_genero, nome_genero) values (7, 'aventura');
-insert into genero (id_genero, nome_genero) values (8, 'suspense');
-insert into genero (id_genero, nome_genero) values (9, 'ação');
-insert into genero (id_genero, nome_genero) values (10, 'ficção científica');
-
 insert into
     cinema (id_cinema, nome_cinema)
 values
@@ -521,8 +510,6 @@ values
     (10, '27/03/2022', 'pix', 10, 54);
 
 /*UPDATES*/
-update genero set id_genero = 19, nome_genero = 'Comédia dms' where id_genero = 4;
-
 update
     filme
 set
@@ -729,9 +716,6 @@ where
     id_ingresso = 5;
 
 /*DELETE*/
-DELETE FROM genero WHERE id_genero = 4;
-
-
 DELETE FROM
     filme
 WHERE
@@ -858,8 +842,6 @@ WHERE
     id_ingresso = 10;
 
 /*SELECTS*/
-select * from genero order by id_genero asc;
-
 select
     *
 from
@@ -929,7 +911,6 @@ from
     filme
 where
     id_filme = 18;
-
 
 SELECT
     *
